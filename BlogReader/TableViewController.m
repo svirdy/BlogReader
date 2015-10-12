@@ -33,6 +33,7 @@
     for (NSDictionary *blogPostsDictionary in blogPostsArray) {
         BlogPost *blogPost = [BlogPost blogPostWithTitle:[blogPostsDictionary objectForKey:@"title"]];
         blogPost.author = [blogPostsDictionary objectForKey:@"author"];
+        blogPost.thumbnail = [blogPostsDictionary objectForKey:@"thumbnail"];
         [self.blogPosts addObject:blogPost];
     }
     
@@ -59,6 +60,14 @@
     
     BlogPost *blogPost = [self.blogPosts objectAtIndex:indexPath.row];
     
+    if ( [blogPost.thumbnail isKindOfClass:[NSString class]]) {
+        
+        NSData *imageData = [NSData dataWithContentsOfURL:blogPost.thumbnailURL];
+        UIImage *image = [UIImage imageWithData:imageData];
+        cell.imageView.image = image;
+    } else {
+        cell.imageView.image = [UIImage imageNamed:@"treehouse.png"];
+    }
     cell.textLabel.text = blogPost.title;
     cell.detailTextLabel.text = blogPost.author;
     return cell;
