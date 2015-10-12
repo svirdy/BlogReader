@@ -12,6 +12,7 @@
 		170826FF1BC8E55300687031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 170826FE1BC8E55300687031 /* Assets.xcassets */; };
 		1708270A1BC8E62400687031 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170827091BC8E62400687031 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		1708270D1BC8EACA00687031 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1708270C1BC8EACA00687031 /* TableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		172B8F231BCA0D0D00DC79BE /* BlogPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 172B8F221BCA0D0D00DC79BE /* BlogPost.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		170827091BC8E62400687031 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1708270B1BC8EACA00687031 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		1708270C1BC8EACA00687031 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		172B8F211BCA0D0D00DC79BE /* BlogPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogPost.h; sourceTree = "<group>"; };
+		172B8F221BCA0D0D00DC79BE /* BlogPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogPost.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +61,14 @@
 			children = (
 				170826F51BC8E55300687031 /* AppDelegate.h */,
 				170826F61BC8E55300687031 /* AppDelegate.m */,
+				1708270B1BC8EACA00687031 /* TableViewController.h */,
+				1708270C1BC8EACA00687031 /* TableViewController.m */,
+				172B8F211BCA0D0D00DC79BE /* BlogPost.h */,
+				172B8F221BCA0D0D00DC79BE /* BlogPost.m */,
+				170827091BC8E62400687031 /* Main.storyboard */,
 				170826FE1BC8E55300687031 /* Assets.xcassets */,
 				170827031BC8E55300687031 /* Info.plist */,
 				170826F21BC8E55300687031 /* Supporting Files */,
-				170827091BC8E62400687031 /* Main.storyboard */,
-				1708270B1BC8EACA00687031 /* TableViewController.h */,
-				1708270C1BC8EACA00687031 /* TableViewController.m */,
 			);
 			path = BlogReader;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				170826F71BC8E55300687031 /* AppDelegate.m in Sources */,
 				1708270D1BC8EACA00687031 /* TableViewController.m in Sources */,
 				170826F41BC8E55300687031 /* main.m in Sources */,
+				172B8F231BCA0D0D00DC79BE /* BlogPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +281,7 @@
 				170827081BC8E55300687031 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
