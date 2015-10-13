@@ -13,6 +13,7 @@
 		1708270A1BC8E62400687031 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170827091BC8E62400687031 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		1708270D1BC8EACA00687031 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1708270C1BC8EACA00687031 /* TableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		172B8F231BCA0D0D00DC79BE /* BlogPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 172B8F221BCA0D0D00DC79BE /* BlogPost.m */; settings = {ASSET_TAGS = (); }; };
+		17E9CBD71BCC9B880021BC34 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9CBD61BCC9B880021BC34 /* WebViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		1708270C1BC8EACA00687031 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		172B8F211BCA0D0D00DC79BE /* BlogPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogPost.h; sourceTree = "<group>"; };
 		172B8F221BCA0D0D00DC79BE /* BlogPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogPost.m; sourceTree = "<group>"; };
+		17E9CBD51BCC9B880021BC34 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		17E9CBD61BCC9B880021BC34 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				1708270C1BC8EACA00687031 /* TableViewController.m */,
 				172B8F211BCA0D0D00DC79BE /* BlogPost.h */,
 				172B8F221BCA0D0D00DC79BE /* BlogPost.m */,
+				17E9CBD51BCC9B880021BC34 /* WebViewController.h */,
+				17E9CBD61BCC9B880021BC34 /* WebViewController.m */,
 				170827091BC8E62400687031 /* Main.storyboard */,
 				170826FE1BC8E55300687031 /* Assets.xcassets */,
 				170827031BC8E55300687031 /* Info.plist */,
@@ -151,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				170826F71BC8E55300687031 /* AppDelegate.m in Sources */,
+				17E9CBD71BCC9B880021BC34 /* WebViewController.m in Sources */,
 				1708270D1BC8EACA00687031 /* TableViewController.m in Sources */,
 				170826F41BC8E55300687031 /* main.m in Sources */,
 				172B8F231BCA0D0D00DC79BE /* BlogPost.m in Sources */,
