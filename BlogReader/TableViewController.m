@@ -35,6 +35,7 @@
         blogPost.author = [blogPostsDictionary objectForKey:@"author"];
         blogPost.thumbnail = [blogPostsDictionary objectForKey:@"thumbnail"];
         blogPost.date = [blogPostsDictionary objectForKey:@"date"];
+        blogPost.url = [NSURL URLWithString:[blogPostsDictionary objectForKey:@"url"]];
         [self.blogPosts addObject:blogPost];
     }
     
@@ -74,6 +75,12 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    BlogPost *blogPost = [self.blogPosts objectAtIndex:indexPath.row];
+    UIApplication *application = [UIApplication sharedApplication];
+    [application openURL:blogPost.url];
+}
 
 /*
 // Override to support conditional editing of the table view.
